@@ -1,4 +1,7 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>QG dos Vilões · Kit do Vilão</title>
 <meta name="description" content="Entra no QG dos Vilões, a comunidade oficial do KN no Telegram, e leva a config inteira dele de graça.">
@@ -6,14 +9,134 @@
 <meta property="og:description" content="Live avisada antes, Aula do Vilão, Games Club e Corujão. No cadastro tu leva a config inteira do KN.">
 <meta property="og:image" content="https://qgdosviloes.com.br/capa.jpg">
 <meta name="theme-color" content="#0B0B0C">
-<style>html,body{margin:0;height:100%;background:#0B0B0C;color:#EFE7D6;font:16px/1.4 system-ui,sans-serif}main{min-height:100%;display:grid;place-items:center;text-align:center;padding:24px}a{display:inline-block;margin-top:16px;background:#E6B84F;color:#0B0B0C;font-weight:700;padding:14px 22px;border-radius:10px;text-decoration:none}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@800;900&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{--preto:#0D0D0F;--grafite:#1C1D21;--linha:#2E3036;--ouro:#C8A04A;--osso:#F1ECE3;--texto:#D9D4CA;--cinza:#9A9890;--erro:#E07A6E;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--preto);color:var(--osso);font:400 16px/1.5 "IBM Plex Sans",system-ui,sans-serif;padding:24px 16px 48px}
+.w{max-width:460px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr);gap:22px}
+.top{display:flex;justify-content:space-between;align-items:center}
+.top svg{height:34px;width:auto;flex:none}
+.tag{font:700 12px "JetBrains Mono",monospace;letter-spacing:.16em;color:var(--ouro)}
+h1{margin:0;font:900 76px/.88 "Saira Extra Condensed",sans-serif;text-transform:uppercase}
+h1 span{color:var(--ouro)}
+.lead{margin:0;color:var(--texto);font-size:17px}
+ul.what{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+ul.what li{display:flex;gap:10px;align-items:flex-start;font-size:15px;color:var(--texto)}
+ul.what li b{color:var(--ouro);font-family:"JetBrains Mono",monospace;font-size:13px;min-width:22px}
+form{display:grid;grid-template-columns:minmax(0,1fr);gap:14px;background:var(--grafite);border:1px solid var(--linha);padding:18px}
+label{display:grid;grid-template-columns:minmax(0,1fr);gap:6px;min-width:0;font-size:13px;font-weight:600;color:var(--texto)}
+input[type=text],input[type=email],input[type=tel],select{width:100%;max-width:100%;min-width:0;text-overflow:ellipsis;padding:13px 12px;background:var(--preto);border:1px solid var(--linha);color:var(--osso);font:500 16px "IBM Plex Sans",sans-serif}
+input:focus,select:focus{outline:2px solid var(--ouro);outline-offset:0}
+.check{display:flex;gap:10px;align-items:flex-start;font-weight:400;font-size:13px;line-height:1.4}
+.check input{margin-top:2px;width:18px;height:18px;accent-color:var(--ouro);flex:none}
+button{padding:16px;background:var(--ouro);color:var(--preto);border:0;font:900 26px/1 "Saira Extra Condensed",sans-serif;text-transform:uppercase;letter-spacing:.02em;cursor:pointer}
+button:disabled{opacity:.6}
+.err{color:var(--erro);font-size:14px;min-height:1em;margin:0}
+details{font-size:12.5px;color:var(--cinza);border-top:1px solid var(--linha);padding-top:10px}
+details summary{cursor:pointer;color:var(--texto)}
+details p{margin:8px 0 0}
+.ok{display:none;gap:16px}
+.ok.show{display:grid}
+.ok a{display:block;text-align:center;padding:16px;font:900 24px/1 "Saira Extra Condensed",sans-serif;text-transform:uppercase;text-decoration:none}
+.ok a.tg{background:var(--ouro);color:var(--preto)}
+.ok a.kit{border:1px solid var(--ouro);color:var(--ouro)}
+.small{font-size:12px;color:var(--cinza)}
+</style>
+</head>
+<body>
+<div class="w">
+  <div class="top">
+    <svg viewBox="0 0 440 120" aria-label="KNG"><g fill="#C8A04A"><polygon points="8,84 8,30 30,54 44,22 60,66 76,22 90,54 112,30 112,84"/><rect x="8" y="90" width="104" height="12"/></g><g fill="#F1ECE3" transform="translate(150 0)"><rect x="0" y="10" width="26" height="100"/><polygon points="26,54 58,10 88,10 50,62 88,110 58,110 26,68"/><rect x="100" y="10" width="26" height="100"/><rect x="158" y="10" width="26" height="100"/><polygon points="100,10 126,10 184,110 158,110"/><path d="M284 10 H196 V110 H284 V54 H238 V76 H258 V88 H222 V32 H284 Z"/></g></svg>
+    <span class="tag">GRÁTIS</span>
+  </div>
+
+  <div id="form-area" style="display:grid;gap:22px">
+    <h1>Kit do<br><span>Vilão</span></h1>
+    <p class="lead">A config do KNG pronta pra colar no teu CS2, e a entrada no QG dos Vilões no Telegram.</p>
+    <ul class="what">
+      <li><b>01</b>Mira, sensibilidade e viewmodel do KNG</li>
+      <li><b>02</b>Entrada no QG: Games Club, aviso de live antes de todo mundo e desafio toda semana</li>
+      <li><b>03</b>Aula do Vilão toda quarta</li>
+    </ul>
+
+    <form id="f" novalidate>
+      <label for="nome">Nome<input id="nome" type="text" autocomplete="given-name" required></label>
+      <label for="email">E-mail<input id="email" type="email" autocomplete="email" inputmode="email" required></label>
+      <label for="whatsapp">WhatsApp com DDD<input id="whatsapp" type="tel" autocomplete="tel" inputmode="tel" placeholder="11 99999-9999" required></label>
+      <label for="rank">Teu rank hoje (opcional)
+        <select id="rank"><option value="">Prefiro não dizer</option>
+          <optgroup label="Premier (CS Rating)"><option value="premier-cinza">Cinza · até 4.999</option><option value="premier-azul-claro">Azul-claro · 5.000 a 9.999</option><option value="premier-azul">Azul · 10.000 a 14.999</option><option value="premier-roxo">Roxo · 15.000 a 19.999</option><option value="premier-rosa">Rosa · 20.000 a 24.999</option><option value="premier-vermelho">Vermelho · 25.000 a 29.999</option><option value="premier-ouro">Ouro · 30.000+</option></optgroup>
+          <optgroup label="FACEIT"><option value="faceit-1-3">Nível 1 a 3</option><option value="faceit-4-7">Nível 4 a 7</option><option value="faceit-8-10">Nível 8 a 10</option></optgroup>
+          <optgroup label="Outros"><option value="competitivo">Competitivo por mapa (Prata a Global)</option><option value="gamers-club">Gamers Club</option><option value="comecei">Comecei agora</option></optgroup>
+        </select>
+      </label>
+      <label for="dif">Qual tua maior dificuldade no CS? (opcional)<input id="dif" type="text" maxlength="200"></label>
+      <label class="check"><input id="maior18" type="checkbox" required>Tenho 18 anos ou mais.</label>
+      <label class="check"><input id="novidades" type="checkbox">Quero receber novidades do KNG por e-mail e WhatsApp: lives, aulas, produtos e parceiros. Posso sair quando quiser.</label>
+      <p class="err" id="err" role="alert"></p>
+      <button id="btn" type="submit">Quero o kit</button>
+      <details>
+        <summary>Como a gente cuida dos teus dados</summary>
+        <p><strong>Quem cuida:</strong> KNG (Vito Giuseppe), contato kingvitogiuseppe@gmail.com, com a gestão da equipe dele.</p>
+        <p><strong>Pra quê:</strong> te entregar o kit e o convite do QG. Se tu marcar a segunda caixa, também pra te mandar novidades do KNG.</p>
+        <p><strong>O que a gente não faz:</strong> não vende teus dados e não passa teu contato pra ninguém. Parceiro nunca recebe tua lista.</p>
+        <p><strong>Teus direitos:</strong> pedir uma cópia, corrigir ou apagar teus dados e cancelar as novidades a qualquer hora, pelo e-mail acima.</p>
+      </details>
+    </form>
+  </div>
+
+  <div class="ok" id="ok">
+    <h1 id="okt">Tá na mão,<br><span>vilão</span></h1>
+    <p class="lead" id="okl">Abrindo o Telegram em <b id="seg">5</b> s. O robô do QG confirma teu cadastro e te manda o link de entrada, que é só teu.</p>
+    <a class="tg" id="tg" href="https://t.me/qgdosviloes_bot">Entrar no QG dos Vilões</a>
+    <a class="kit" id="kit" href="/autoexec.cfg" download="autoexec.cfg">Baixar o Kit do Vilão</a>
+    <p class="small">Abriu o Telegram? Toca em <b>Iniciar</b> na conversa com o robô. Se não abrir, instala o app e toca no botão de novo.</p>
+    <ul class="what">
+      <li><b>01</b>Copia o autoexec.cfg pra Steam › steamapps › common › Counter-Strike Global Offensive › game › csgo › cfg</li>
+      <li><b>02</b>Na Steam: botão direito no CS2 › Propriedades › Opções de inicialização › escreve +exec autoexec</li>
+      <li><b>03</b>Abre o jogo. No console aparece "Kit do Vilao carregado".</li>
+    </ul>
+    <p class="small">Vídeo do KN: 1280x1024, 4:3 esticado, brilho 93%. Mouse a 400 DPI. Não é a config que te faz jogar como ele. É o ponto de partida.</p>
+  </div>
+</div>
+
 <script>
-// Redireciona (não embute): página do Apps Script dentro de outro site fica em branco pra quem está logado no Google.
-var p=location.pathname.replace(/^\/+|\/+$/g,'').split('/')[0];
-var q=new URLSearchParams(location.search);
-var o=(q.get('o')||q.get('utm_source')||p||'yt').slice(0,40);
-location.replace('https://script.google.com/macros/s/AKfycbxFIwO3bo2e5kOQpARzNWc97imt9SMXDYxgMkf9IZex1tb_cKVqbVqD_HYaUPD25PWb/exec?o='+encodeURIComponent(o));
-</script></head><body><main><div><b>Abrindo o cadastro do QG dos Vilões…</b><br>
-<a id="ir" href="https://script.google.com/macros/s/AKfycbxFIwO3bo2e5kOQpARzNWc97imt9SMXDYxgMkf9IZex1tb_cKVqbVqD_HYaUPD25PWb/exec?o=yt">Se não abrir, toca aqui</a></div></main>
-<script>document.getElementById('ir').href='https://script.google.com/macros/s/AKfycbxFIwO3bo2e5kOQpARzNWc97imt9SMXDYxgMkf9IZex1tb_cKVqbVqD_HYaUPD25PWb/exec?o='+encodeURIComponent(o);</script>
-</body></html>
+// Cadastro no próprio domínio: o formulário fica aqui e manda os dados pro Apps Script (doPost).
+// Se o Apps Script não responder, cai pro cadastro antigo no Google pra ninguém ficar sem entrar.
+const APP = 'https://script.google.com/macros/s/AKfycbxFIwO3bo2e5kOQpARzNWc97imt9SMXDYxgMkf9IZex1tb_cKVqbVqD_HYaUPD25PWb/exec';
+const q = new URLSearchParams(location.search);
+const ORIGEM = (q.get('o') || q.get('utm_source') || location.pathname.replace(/^\/+|\/+$/g,'').split('/')[0] || 'site').slice(0,40);
+const $ = id => document.getElementById(id);
+function reserva(){ location.href = APP + '?o=' + encodeURIComponent(ORIGEM); }
+function pronto(r){
+  $('form-area').style.display = 'none';
+  $('okt').innerHTML = 'Tá na mão,<br><span>' + String(r.nome || 'vilão').replace(/[<>&"]/g,'') + '</span>';
+  $('tg').href = r.telegram;
+  $('ok').classList.add('show');
+  window.scrollTo(0,0);
+  let n = 5;
+  const t = setInterval(() => { n--; $('seg').textContent = n; if (n <= 0) { clearInterval(t); location.href = r.telegram; } }, 1000);
+}
+$('f').addEventListener('submit', async e => {
+  e.preventDefault();
+  $('err').textContent = '';
+  const d = {
+    nome: $('nome').value, email: $('email').value, whatsapp: $('whatsapp').value,
+    rank: $('rank').value, dificuldade: $('dif').value,
+    maior18: $('maior18').checked, novidades: $('novidades').checked, origem: ORIGEM
+  };
+  $('btn').disabled = true; $('btn').textContent = 'Enviando...';
+  let r;
+  try {
+    const res = await fetch(APP, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(d) });
+    r = await res.json();
+  } catch (x) { reserva(); return; }
+  if (r && r.ok) { pronto(r); return; }
+  $('err').textContent = (r && r.erro) || 'Deu ruim. Tenta de novo.';
+  $('btn').disabled = false; $('btn').textContent = 'Quero o kit';
+});
+</script>
+</body>
+</html>
