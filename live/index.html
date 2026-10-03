@@ -1,0 +1,18 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>QG dos Vilões · Kit do Vilão</title>
+<meta name="description" content="Entra no QG dos Vilões, a comunidade oficial do KN no Telegram, e leva a config inteira dele de graça.">
+<meta property="og:title" content="QG dos Vilões · comunidade oficial do KN">
+<meta property="og:description" content="Live avisada antes, Aula do Vilão, Games Club e Corujão. No cadastro tu leva a config inteira do KN.">
+<meta property="og:image" content="https://qgdosviloes.com.br/capa.jpg">
+<meta name="theme-color" content="#0B0B0C">
+<style>html,body{margin:0;height:100%;background:#0B0B0C}iframe{border:0;width:100%;height:100%;display:block}</style>
+</head><body>
+<iframe id="f" title="Cadastro do QG dos Vilões" allow="clipboard-write"></iframe>
+<script>
+// origem = 1º pedaço do caminho (/live, /bio…) ou ?o= ; vai pra planilha na coluna origem
+var p=location.pathname.replace(/^\/+|\/+$/g,'').split('/')[0];
+var q=new URLSearchParams(location.search);
+var o=q.get('o')||q.get('utm_source')||p||'live';
+document.getElementById('f').src='https://script.google.com/macros/s/AKfycbxFIwO3bo2e5kOQpARzNWc97imt9SMXDYxgMkf9IZex1tb_cKVqbVqD_HYaUPD25PWb/exec?o='+encodeURIComponent(o.slice(0,40));
+</script></body></html>
